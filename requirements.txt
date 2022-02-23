@@ -1,0 +1,2 @@
+cli-formatter>=1.2.0
+dns-messages>=1.0.0
