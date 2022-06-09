@@ -156,6 +156,7 @@ class FakeDnsServer(DnsServer):
 
     def _generate_answer_from_pattern(self, message: DnsMessage, question: Question, pattern: DomainPattern) -> DnsMessage or None:
         answer = DnsMessage(message_id=message.message_id, qr=1)
+        answer.questions.append(question)
 
         if pattern.not_existing_domain or self._nxdomain_response:
             answer.rcode = RCODE.non_existing_domain

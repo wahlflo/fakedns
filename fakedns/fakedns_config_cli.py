@@ -56,7 +56,7 @@ If no path to config is given the default location of the global config is used,
 """
 
 version = """
-fakedns-config (from fakedns version 1.0)
+fakedns-config (from fakedns version 1.1)
 
 developed by Florian Wahl (https://www.linkedin.com/in/florian-wahl-security-expert/)
 

@@ -9,7 +9,6 @@ from fakedns.config import (
     Configuration,
 )
 from fakedns.library import FakeDnsServer
-from fakedns.docopt import docopt
 import time
 import argparse
 
@@ -18,7 +17,7 @@ usage = 'fakedns [OPTIONS...]'
 description = "fakedns is a script which mimicks DNS resolution"
 
 version = """
-fakedns-config (from fakedns version 1.0)
+fakedns version 1.1
 
 developed by Florian Wahl (https://www.linkedin.com/in/florian-wahl-security-expert/)
 

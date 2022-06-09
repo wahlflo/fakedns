@@ -6,7 +6,7 @@ with open('README.md', mode='r', encoding='utf-8') as readme_file:
 
 setuptools.setup(
     name="fakedns",
-    version="1.0.0",
+    version="1.1",
     author="Florian Wahl",
     author_email="florian.wahl.developer@gmail.com",
     description="A fake DNS server for malware analysis written in Python3",
