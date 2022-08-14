@@ -125,8 +125,8 @@ class Configuration:
         self._process_config_section_list(section_list=section_list)
 
     def _process_config_section_list(self, section_list: List[dict]) -> None:
-        # the setting section must be parsed at first since the pattern for example accesses attributes parsed in setting sections
-        self._process_config_setting_section(section_list=section_list)
+        # the Settings section must be parsed at first since the pattern for example accesses attributes parsed in Settings sections
+        self._process_config_settings_section(section_list=section_list)
         self._process_config_output_section(section_list=section_list)
         self._process_config_pattern_entries(section_list=section_list)
 
@@ -144,8 +144,8 @@ class Configuration:
             if section['name'] == section_name:
                 yield section['data']
 
-    def _process_config_setting_section(self, section_list: List[dict]) -> None:
-        section_dict = Configuration._get_section_by_name(section_name='Setting', section_list=section_list)
+    def _process_config_settings_section(self, section_list: List[dict]) -> None:
+        section_dict = Configuration._get_section_by_name(section_name='Settings', section_list=section_list)
 
         ip_of_this_machine = Configuration._ip_of_this_machine()
 
