@@ -167,7 +167,7 @@ class Configuration:
             self._server_port = int(section_dict['ListenOnPort'])
 
         if 'ListenOnIP' in section_dict:
-            self._server_ip = section_dict['section_dict']
+            self._server_ip = section_dict['ListenOnIP']
         else:
             if ip_of_this_machine is None:
                 raise ConfigLoadError(message='Could not load the IP of this machine, please specify the IP of the fake dns server in the config file')
